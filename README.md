@@ -51,7 +51,15 @@ Using the tools you've learned in class, create a sortable, filterable table of 
 ![Fancy Table](/example.gif)
 
 ## Hard Mode
-If you're feeling adventurous 
+If you're feeling adventurous, pull your states data from: http://tiny-pizza-server.herokuapp.com/collections/fancy-table
+
+## Insane Mode
+If you're feeling extra adventurous, use the Etsy API to pull your data instead of Tiny Pizza Server. In this case you don't have to pull in a list of states. Instead pull in a list of listings from Etsy with the following columns:
+
+* Title
+* Number of favorites
+* Quantity
+* Link to the listing on Etsy
             
 ## Notes
 Hints: One way to do this is to store two copies of your states array. The first copy would contain the original list, and the second copy would be stored in a model (on the $scope variable). As the user interacts with your table by changing the sort order or filtering the data, you could use underscore ot lodash to filter and sort the original list, and store the result on your $scope variable (thereby updating the DOM). ng-repeat is necessary and my solution used all of the directives listed in the Performance Objectives section above.
