@@ -1,7 +1,7 @@
 # Angular Fancy Table
 
 ## Description
-Use angular to create a sortable, filterable data table that pulls data from an API.
+Use angular to create a sortable, filterable data table of US states.
 
 
 ## Objectives
@@ -47,13 +47,16 @@ After completing this assignment, you be able to effectively use
 
 
 ## Normal Mode
-Using the tools you've learned in class, create a sortable, filterable table of US states. The table should look and behave like the example below including showing and hiding arrows on the table headings indicating which direction the table is currently being sorted (and on which column). You should be able to type into the filter box and only show states that match the filter string on either the state name or abbreviation. Filtering on "tx" and "te" should both show Texas. The filtering should be case insensitive (both upper and lower case filter strings should work).
+Using the tools you've learned in class, create a sortable, filterable table of US states. The table should look and behave like the example below including showing and hiding arrows on the table headings indicating which direction the table is currently being sorted (and on which column). You should be able to type into the filter box and only show states that match the filter string on either the state name or abbreviation. Filtering on "tx" and "te" should both show Texas. The filtering should be case insensitive (both upper and lower case filter strings should work). You should use underscore or lodash methods to handle the filtering in your code.
 ![Fancy Table](/example.gif)
+
+## Hard Mode
+If you're feeling adventurous 
             
 ## Notes
-
-Notes go here...
+Hints: One way to do this is to store two copies of your states array. The first copy would contain the original list, and the second copy would be stored in a model (on the $scope variable). As the user interacts with your table by changing the sort order or filtering the data, you could use underscore ot lodash to filter and sort the original list, and store the result on your $scope variable (thereby updating the DOM). ng-repeat is necessary and my solution used all of the directives listed in the Performance Objectives section above.
 
 ## Additional Resources
 
-* Read []()
+* [_.filter](http://underscorejs.org/#filter)
+* [_.sortBy](http://underscorejs.org/#sortBy)
