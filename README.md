@@ -44,6 +44,7 @@ After completing this assignment, you be able to effectively use
 ### Requirements
 
 * No JSHint warnings or errors (other than ones related to angular)
+* You must use _.filter and _.sortBy
 
 
 ## Normal Mode
