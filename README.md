@@ -39,7 +39,7 @@ After completing this assignment, you be able to effectively use
   * `scripts/app.js`
   * `scripts/controllers.js`
   * If you use yeoman than build your files (`gulp build`) and commit your dist directory to your completed repo.
-  * Your repo should use .gitignore to remove bower_components
+  * Your repo should use [.gitignore](https://help.github.com/articles/ignoring-files/) to remove bower_components
 
 ### Requirements
 
